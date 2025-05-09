@@ -4,6 +4,7 @@ metadata:
   labels:
     app: nginx
   name: nginx-deployment-uat
+  namespace: default
 spec:
   revisionHistoryLimit: 10
   selector:
