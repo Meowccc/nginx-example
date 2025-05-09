@@ -3,8 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: nginx
-  namespace: default
-  name: nginx-deployment-staging
+  name: nginx-deployment-uat
 spec:
   revisionHistoryLimit: 10
   selector:
@@ -18,7 +17,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx-staging:4
+        image: nginx-uat:1
         ports:
         - containerPort: 80
 
